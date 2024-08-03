@@ -1,0 +1,9 @@
+{
+  "name": "houseplant-store",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1"
+  }
+}
