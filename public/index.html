@@ -4,9 +4,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <title>Houseplant Store</title>
+    <p>Your perfect houseplants await</p>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Harmony for Earth - Houseplant Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Help
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Technical Documentation</a></li>
+                          <li><a class="dropdown-item" href="#">Talk to Us</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <!-- li><a class="dropdown-item" href="#">Something else here</a></li -->
+                      </ul>
+                  </li>
+                  <!-- li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li-->
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button type="button" class="btn btn-info">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center">Are you an eco-conscious art lover?</h1>
+    <br/>
+    <div class="alert alert-success mt-3 fade show" id="successAlert" style="display: none;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <i class="bi bi-1-circle-fill"></i> Yay - Success!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="alert alert-warning mt-3 fade show" id="warningAlert" style="display: none;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <i class="bi bi-2-circle-fill"></i> Warning - Be careful!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="alert alert-danger mt-3 fade show" id="dangerAlert" style="display: none;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <i class="bi bi-3-circle-fill"></i> Danger - Something went wrong!
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <!-- Buttons -->
+    <div class="btn-group d-flex justify-content-center align-items-center" role="group" aria-label="Button group">
+        <button type="button" class="btn btn-success mx-2" id="successBtn">YES</button>
+        <button type="button" class="btn btn-warning mx-2" id="warningBtn">MAY BE</button>
+        <button type="button" class="btn btn-danger mx-2" id="dangerBtn">NOT YET</button>
+    </div>
+</div>
+
+<br/><br/><br/>
+  <!-- Hero Section -->
+  <header class="hero text-center">
+    <h1>Welcome to Harmony for Earth</h1>
+    <p>Your perfect houseplants await</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Houseplants</h2>
+    <div class="row">
+      <!-- Product Card 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://www.plantasyflores.net/wp-content/uploads/2020/06/ALOE-VERA.jpg" class="card-img-top" alt="Aloe Vera">
+          <div class="card-body">
+            <h5 class="card-title">Aloe Vera</h5>
+            <p class="card-text">Aloe Vera is known for its healing properties and easy maintenance.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://hearthandvine.com/wp-content/uploads/2015/09/fiddle-leaf-fig-leaves-735x735.jpg" class="card-img-top" alt="Fiddle Leaf Fig">
+          <div class="card-body">
+            <h5 class="card-title">Fiddle Leaf Fig</h5>
+            <p class="card-text">The Fiddle Leaf Fig is a stylish plant with large, glossy leaves.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://i.pinimg.com/originals/e4/ad/b1/e4adb176e1447f320c296a6734c132ee.jpg" class="card-img-top" alt="Snake Plant">
+          <div class="card-body">
+            <h5 class="card-title">Snake Plant</h5>
+            <p class="card-text">The Snake Plant is a hardy plant that thrives in various conditions.</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form>
+    <div class="mb-3" style="margin: 30px;">
+        <label for="name" class="form-label"><b>Full name</b></label>
+        <input type="text" class="form-control" id="name" style="width: 500px;"></p>
+    </div>
+    <div class="mb-3" style="margin: 30px;">
+        <label for="reason" class="form-label"><b>Reason for contacting us:</b></label>
+        <select id="cars" class="btn btn-secondary dropdown-toggle" style="background-color: rgb(255, 255, 255);color: black; text-align: center; width: 250px;" >
+            <option value="registration" selected style=" text-align: left;">Buy a plant</option>
+            <option value="submission" style=" text-align: left;">Donate to our cause</option>
+            <option value="feedback" style=" text-align: left;">Feedback & Requests</option>
+        </select>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Buy a plant</a></li>
+            <li><a class="dropdown-item" href="#">Donate to our cause</a></li>
+            <li><a class="dropdown-item" href="#">Feedback</a></li>
+        </ul> 
+    </div>
+    <div class="mb-3" style="margin: 30px;">
+        <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 500px;">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3" style="margin: 30px;">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check" style="margin: 30px;">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="mb-3" style="margin: 30px;">
+        <textarea name="message" id="message" cols="65" rows="10" style="resize: none;">Add your comments</textarea>
+    </div></p>
+    <button type="submit" class="btn btn-primary" style="margin: 30px;">Submit</button>
+    <button type="reset" class="btn btn-secondary" style="margin: 30px;">Reset</button>
+</form>
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>© 2024 Houseplant Store - Harmony for Earth. All rights reserved.</p>
+  </footer>
+
+<br/><br/>
     <div id="root"></div>
   </body>
 </html>
